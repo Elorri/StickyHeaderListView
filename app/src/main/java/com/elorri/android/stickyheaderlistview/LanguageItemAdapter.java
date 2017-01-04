@@ -2,6 +2,7 @@ package com.elorri.android.stickyheaderlistview;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -60,9 +61,7 @@ public class LanguageItemAdapter extends ArrayAdapter<Language> implements Stick
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
-
-        holder.text.setText(list.get(position).mLanguage);
-
+        holder.bind(list.get(position).mLanguage, getItem(position).isAvailable(), isDownloading);
         return convertView;
     }
 
@@ -96,23 +95,66 @@ public class LanguageItemAdapter extends ArrayAdapter<Language> implements Stick
     }
 
     class ViewHolder implements View.OnClickListener {
-        boolean isAvailableLanguageItem;
+        boolean mIsAvailableLanguageItem;
+        boolean mIsDownloading;
         TextView text;
+
+        public void bind(String language, boolean isAvailableLanguageItem, boolean isDownloading) {
+            mIsAvailableLanguageItem = isAvailableLanguageItem;
+            mIsDownloading = isDownloading;
+            text.setText(language);
+
+            if (mIsAvailableLanguageItem && languageKey) {
+                Log.e("App", Thread.currentThread().getStackTrace()[2] + "");
+                view.setBackgroundColor(null);
+            } else {
+                Log.e("App", Thread.currentThread().getStackTrace()[2] + "");
+                view.setBackgroundColor(Color.GRAY);
+            }
+        }
 
         @Override
         public void onClick(View view) {
             switch (view.getId()) {
                 case R.id.resourcemanager_primary_action: {
+                    if (mIsAvailableLanguageItem) {
+                        fragment.onUpdateRequest();
+                        Log.e("App", Thread.currentThread().getStackTrace()[2] + "");
+                    } else {
+                        Log.e("App", Thread.currentThread().getStackTrace()[2] + "");
+                        downloadOrCancelRequest();
+                    }
                     return;
                 }
                 case R.id.resourcemanager_secondary_action: {
+                    fragment.onRemoveRequest();
                     return;
                 }
-                default:{
-                    Log.e("App", Thread.currentThread().getStackTrace()[2]+"");
+                default: {
+                    Log.e("App", Thread.currentThread().getStackTrace()[2] + "");
+                    if (mIsAvailableLanguageItem) {
+                        //Select it as default language request
+                        setDefaultLanguageKey;
+                        notifyDataSetChanged(); //This will redraw background of now unselected languages.
+                        fragment.defaultLanguageChanged();
+                        Log.e("App", Thread.currentThread().getStackTrace()[2] + "");
+                    } else {
+                        downloadOrCancelRequest();
+                    }
                 }
             }
         }
+
+        private void downloadOrCancelRequest() {
+            //Download or cancel request
+            Log.e("App", Thread.currentThread().getStackTrace()[2] + "");
+            if(mIsDownloading){
+                fragment.onCancelRequest();
+            }else{
+                fragment.onDownloadRequest();
+            }
+        }
+
     }
 
 }
