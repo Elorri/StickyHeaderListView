@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="?android:attr/listPreferredItemHeight"-->
+                    <!--xmlns:tools="http://schemas.android.com/tools"-->
+                    <!--android:background="?android:attr/activatedBackgroundIndicator"-->
+                    <!--android:descendantFocusability="blocksDescendants"-->
+                    <!--android:paddingLeft="?android:attr/listPreferredItemPaddingLeft">-->
+
+        <!--<com.myscript.atk.resourcemanager.ui.view.RadioStateImageView-->
+            <!--android:id="@+id/resourcemanager_radio"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="48dip"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="8dip"-->
+            <!--android:clickable="false"-->
+            <!--android:duplicateParentState="true"-->
+            <!--android:gravity="center"-->
+            <!--android:scaleType="center" />-->
+
+        <!--&lt;!&ndash; http://www.curious-creature.org/2009/02/22/android-layout-tricks-1/ &ndash;&gt;-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="@dimen/resourcemanager_default_padding"-->
+            <!--android:layout_toLeftOf="@+id/resourcemanager_actions"-->
+            <!--android:layout_toRightOf="@id/resourcemanager_radio"-->
+            <!--android:duplicateParentState="true"-->
+            <!--android:paddingBottom="3dip"-->
+            <!--android:paddingTop="3dip" >-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/resourcemanager_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_above="@id/resourcemanager_progress"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_alignWithParentIfMissing="true"-->
+                <!--android:duplicateParentState="true"-->
+                <!--android:ellipsize="end"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:maxLines="1"-->
+                <!--android:singleLine="true"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+            <!--<ProgressBar-->
+                <!--android:id="@+id/resourcemanager_progress"-->
+                <!--style="?android:attr/progressBarStyleHorizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/resourcemanager_progressbar_height"-->
+                <!--android:layout_above="@id/resourcemanager_summary"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:duplicateParentState="true"-->
+                <!--android:indeterminate="true"-->
+                <!--android:visibility="gone" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/resourcemanager_summary"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:duplicateParentState="true"-->
+                <!--android:text="@string/resourcemanager_download_enqueued"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textColor="?android:attr/textColorSecondary"-->
+                <!--android:visibility="gone" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@id/resourcemanager_actions"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_centerVertical="true">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/resourcemanager_update"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="?android:attr/listPreferredItemPaddingRight"-->
+                <!--android:clickable="false"-->
+                <!--android:duplicateParentState="true"-->
+                <!--android:scaleType="center"-->
+                <!--tools:src="@drawable/resourcemanager_ic_action_download_light"/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/resourcemanager_download"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="?android:attr/listPreferredItemPaddingRight"-->
+                <!--android:clickable="false"-->
+                <!--android:duplicateParentState="true"-->
+                <!--android:scaleType="center"-->
+                <!--tools:src="@drawable/resourcemanager_ic_action_download_light"/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/resourcemanager_remove"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="?android:attr/listPreferredItemPaddingRight"-->
+                <!--android:clickable="false"-->
+                <!--android:duplicateParentState="true"-->
+                <!--android:scaleType="center"-->
+                <!--tools:src="@drawable/resourcemanager_ic_delete_black"/>-->
+
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@id/resourcemanager_download"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="?android:attr/listPreferredItemPaddingRight"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:clickable="false"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:duplicateParentState="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:scaleType="center"/>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<ImageButton&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@id/resourcemanager_cancel"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="48dip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="48dip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="?android:attr/listPreferredItemPaddingRight"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="?attr/resourcemanager_selectableItemBackgroundBorderless"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:scaleType="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="?attr/resourcemanager_icon_download_cancel"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:visibility="gone" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@id/resourcemanager_update"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="48dip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="?android:attr/listPreferredItemPaddingRight"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="?attr/resourcemanager_selectableItemBackgroundBorderless"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:drawableLeft="?attr/resourcemanager_icon_download"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:drawablePadding="8dip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center_vertical"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:paddingLeft="?android:attr/listPreferredItemPaddingRight"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:paddingRight="?android:attr/listPreferredItemPaddingRight"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="@string/resourcemanager_update"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textAllCaps="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textAppearance="?android:attr/textAppearanceSmall"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textStyle="bold" />&ndash;&gt;-->
+        <!--</LinearLayout>-->
+
+    <!--</RelativeLayout>-->
+
+
+</LinearLayout>

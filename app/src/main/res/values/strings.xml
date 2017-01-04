@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">StickyHeaderListView</string>
     <string name="manage_languages">Manage Languages</string>
+    <string name="resourcemanager_installed_section_title">Available</string>
+    <string name="resourcemanager_available_section_title">Unavailable</string>
 </resources>

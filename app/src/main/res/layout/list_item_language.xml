@@ -3,10 +3,48 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/resourcemanager_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textAppearance="?android:textAppearanceMedium"/>
 
+        <ProgressBar
+            android:id="@+id/resourcemanager_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/resourcemanager_progressbar_height"
+            android:indeterminate="true"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--Depending on the binded data this view can trigger 'update' 'download' or 'cancel'actions-->
+            <ImageView
+                android:id="@+id/resourcemanager_primary_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!--This view will trigger downloaded language removal-->
+            <ImageView
+                android:id="@+id/resourcemanager_secondary_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 </LinearLayout>

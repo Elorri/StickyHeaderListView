@@ -1,53 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="languages">
-        <item>French (France)</item>
-        <item>French (Canada)</item>
         <item>Euskadi (Spain)</item>
         <item>French (France)</item>
-        <item>French (Canada)</item>
+        <item>English (USA)</item>
         <item>Euskadi (Spain)</item>
         <item>French (France)</item>
-        <item>French (Canada)</item>
+        <item>English (USA)</item>
         <item>Euskadi (Spain)</item>
         <item>French (France)</item>
-        <item>French (Canada)</item>
+        <item>English (USA)</item>
         <item>Euskadi (Spain)</item>
         <item>French (France)</item>
-        <item>French (Canada)</item>
+        <item>English (USA)</item>
         <item>Euskadi (Spain)</item>
         <item>French (France)</item>
-        <item>French (Canada)</item>
+        <item>English (USA)</item>
         <item>Euskadi (Spain)</item>
         <item>French (France)</item>
-        <item>French (Canada)</item>
+        <item>English (USA)</item>
         <item>Euskadi (Spain)</item>
         <item>French (France)</item>
+        <item>English (USA)</item>
+    </string-array>
+
+    <string-array name="available_languages">
+        <item>German (Germany)</item>
         <item>French (Canada)</item>
-        <item>Euskadi (Spain)</item>
-        <item>French (France)</item>
-        <item>French (Canada)</item>
-        <item>Euskadi (Spain)</item>
-        <item>French (France)</item>
-        <item>French (Canada)</item>
-        <item>Euskadi (Spain)</item>
-        <item>French (France)</item>
-        <item>French (Canada)</item>
-        <item>Euskadi (Spain)</item>
-        <item>French (France)</item>
-        <item>French (Canada)</item>
-        <item>Euskadi (Spain)</item>
-        <item>French (France)</item>
-        <item>French (Canada)</item>
-        <item>Euskadi (Spain)</item>
-        <item>French (France)</item>
-        <item>French (Canada)</item>
-        <item>Euskadi (Spain)</item>
-        <item>French (France)</item>
-        <item>French (Canada)</item>
-        <item>Euskadi (Spain)</item>
-        <item>French (France)</item>
-        <item>French (Canada)</item>
-        <item>Euskadi (Spain)</item>
+        <item>English (UK)</item>
     </string-array>
 </resources>
